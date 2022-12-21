@@ -1,0 +1,29 @@
+.form--element input[type="text"],
+.form--element input[type="password"]{
+    padding: 1em;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.form{
+    margin-top: 0.55em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form--element{
+    margin-top: 2em;
+}
+
+.form--element label{
+    margin-right: 1em;
+}
+
+@media (min-width: 1000px){
+    .form--element input[type="text"],
+    .form--element input[type="password"]{
+        width: 100%;
+    }
+}

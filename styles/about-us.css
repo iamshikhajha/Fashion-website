@@ -1,0 +1,49 @@
+.about-us--hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us--heading{
+    color: white;
+}
+
+.about-us--search{
+    padding: 1em;
+    border-radius: 15px;
+    border: none;
+    width: 85%;
+    margin-top: 2em;
+}
+
+.news{
+    border: 1px solid black;
+    background-color: #f3f2f2;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.news--content{
+    padding: 1em;
+}
+
+.news--image{
+    height: 50%;
+}
+
+.news--image img{
+    height: 100%;
+}
+
+.news--container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3.75em;
+}
+
+@media (min-width: 1000px){
+    .about-us--search{
+        width: 35%;
+    }
+}

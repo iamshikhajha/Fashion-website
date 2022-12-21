@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+}
+
+img{
+    max-width: 100%;
+}
+
+.nav{
+    background-color: #945EB3;
+    padding: 1em;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger{
+    width: 10%;
+}
+
+.nav-items{
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.show{
+    max-height: 100%;
+}
+
+.nav-item{
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.nav-link:hover{
+    background-color: #8DBE2A;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    padding: 0.55em;
+    border-radius: 15px;
+}
+
+.active{
+    background-color: #8DBE2A;
+}
+
+.background-image{
+    background: url('../images/background-home-min.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.overlay{
+    width: 100%;
+    min-height: inherit;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.hero-section{
+    position: relative;
+}
+
+.hero--content{
+    padding: 0 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+}
+
+.hero--heading{
+    margin-bottom: 0.75em;
+}
+
+.btn{
+    background-color: #8DBE2A;
+    padding: 1em;
+    border-radius: 15px;
+    margin-top: 1.75em;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #FFE97F;
+}
+
+.section{
+    padding: 5em 1em;
+}
+
+.section--card{
+    position: relative;
+}
+
+.section--card:not(:first-child){
+    margin-top: 1.5em;
+}
+
+.section--card-image{
+    font-size: 0px;
+}
+
+.section--card-image::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.55;
+    overflow: hidden;
+}
+
+.card--content{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: white;
+}
+
+.banner{
+    background-color: #642488;
+}
+
+.banner--content{
+    text-align: center;
+    color: white;
+}
+
+.section--heading{
+    margin-bottom: 3em;
+}
+
+.line{
+    width: 30%;
+    border: 3px solid #8DBE2A;
+    font-size: 0px;
+    border-radius: 15px;
+    background-color: #8DBE2A;
+}
+
+.product:not(:first-child){
+    margin-top: 2em;
+}
+
+.product--description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product--image,
+.product--image img{
+    border-radius: 15px;
+}
+
+.banner-2--container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-2--content{
+    color: white;
+}
+
+.logo-rotated{
+    transform: rotate(-18.88deg);
+    color: #FFE97F;
+}
+
+.footer{
+    background-color: #151513;
+}
+
+.footer--content{
+    color: white;
+    padding: 2em 1em;
+}
+
+.footer-list:not(:first-child){
+    margin-top: 1em;
+}
+
+.list-item{
+    list-style-type: none;
+    padding: 1em 0;
+}
+
+.list-link{
+    text-decoration: none;
+    color: white;
+}
+
+.socials--header{
+    margin: 2em 0;
+}
+
+.social-container{
+    display: flex;
+    gap: 1.5em;
+}
+
+.social-container:not(:first-child){
+    margin-top: 1em;
+}
+
+@media (min-width: 1000px){
+    .container{
+        width: 80%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .nav--container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-items{
+        max-height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        width: 70%;
+    }
+
+    .nav-item--right{
+        margin-left: auto;
+    }
+
+    .hero--content{
+        padding: 0 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        width: 40%;
+    }
+
+    .hero--text{
+        font-size: 1.5em;
+    }
+
+    .card--container{
+        display: flex;
+        gap: 3em;
+    }
+
+    .section--card:not(:first-child){
+        margin-top: 0;
+    }
+
+    .section--card-image,
+    .section--card-image img{
+        height: 100%;
+    }
+
+    .line{
+        width: 10%;
+    }
+
+    .product{
+        width: 30%;
+    }
+
+    .product:not(:first-child){
+        margin-top: 0;
+    }
+
+    .section--content-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer--content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-list:not(:first-child){
+        margin: 0;
+    }
+}

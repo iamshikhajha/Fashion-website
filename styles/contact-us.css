@@ -1,0 +1,25 @@
+.contact-us--heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input--container{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us--input{
+    width: 95%;
+    padding: 1em;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-top: 2em;
+}
+
+@media (min-width: 1000px){
+    .contact-us--input{
+        width: 60%;
+    }  
+}

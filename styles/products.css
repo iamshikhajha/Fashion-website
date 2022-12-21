@@ -1,0 +1,45 @@
+.product--hero{
+    background: linear-gradient(180deg, #642488 0%, #B88BD1 169.83%);
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product--search{
+    width: 85%;
+    padding: 1em;
+    border-radius: 15px;
+    border: none;
+}
+
+.circles{
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 1000px;
+}
+
+.circle:hover{
+    background-color: black;
+}
+
+@media (min-width: 1000px){
+    .product--search{
+        width: 35%;
+    }
+
+    .circles{
+        width: 10%;
+    }
+}
